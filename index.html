@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Titan Cold Plunge | Cold Plunge Systems, Ice Baths & Water Chillers | Titan Wellness</title>
+<meta name="description" content="Titan Cold Plunge offers premium cold plunge systems, ice baths, and water chillers with more features and customization than any competitor. 0% APR financing. Free shipping. Built to last.">
+<meta name="keywords" content="titan cold plunge, cold plunge tub, ice bath, water chiller, cold therapy, cold plunge system, titan wellness, cold water immersion">
+<meta property="og:title" content="Titan Cold Plunge | Cold Plunge Systems & Ice Baths | Titan Wellness">
+<meta property="og:description" content="The most customizable cold plunge systems available. Titan Wellness cold plunge tubs, water chillers and ice baths engineered for performance.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://titan-wellness.com/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Titan Wellness",
+  "url": "https://titan-wellness.com",
+  "logo": "https://titan-wellness.com/logo.png",
+  "description": "Titan Cold Plunge systems, ice baths, and water chillers engineered for performance and customization.",
+  "contactPoint": {"@type": "ContactPoint", "contactType": "customer service"},
+  "sameAs": ["https://www.instagram.com/titanwellness","https://www.facebook.com/titanwellness"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Titan Wellness",
+  "url": "https://titan-wellness.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://titan-wellness.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ice: #e8f4f8;
+    --deep: #0a1628;
+    --cold: #1a4a6e;
+    --frost: #4a9bbe;
+    --white: #ffffff;
+    --muted: #8a9bb0;
+    --border: rgba(255,255,255,0.08);
+    --gold: #c9a84c;
+    --text: #e8edf2;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--deep); color: var(--text); line-height: 1.6; }
+
+  /* NAV */
+  nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(10,22,40,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; letter-spacing: 0.08em; color: var(--white); text-decoration: none; }
+  .logo span { color: var(--frost); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--white); }
+  .nav-cta { background: var(--frost); color: var(--white); padding: 0.5rem 1.25rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: background 0.2s; }
+  .nav-cta:hover { background: #3a8aab; }
+
+  /* PAGE SHELL */
+  .page { display: none; }
+  .page.active { display: block; }
+
+  /* HERO */
+  .hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; padding-top: 64px; }
+  .hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #061020 0%, #0d2540 50%, #0a1e38 100%); }
+  .hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(74,155,190,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(74,155,190,0.04) 1px, transparent 1px); background-size: 60px 60px; }
+  .hero-glow { position: absolute; top: 20%; right: -10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(74,155,190,0.12) 0%, transparent 70%); border-radius: 50%; }
+  .hero-content { position: relative; max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+  .hero-eyebrow { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--frost); font-weight: 600; margin-bottom: 1rem; }
+  .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 7vw, 5.5rem); line-height: 0.95; color: var(--white); letter-spacing: 0.02em; margin-bottom: 1.5rem; }
+  .hero h1 em { color: var(--frost); font-style: normal; display: block; }
+  .hero-sub { font-size: 1.1rem; color: var(--muted); max-width: 480px; margin-bottom: 2.5rem; line-height: 1.7; }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary { background: var(--frost); color: var(--white); padding: 0.875rem 2rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; text-decoration: none; letter-spacing: 0.02em; transition: all 0.2s; display: inline-block; }
+  .btn-primary:hover { background: #3a8aab; transform: translateY(-1px); }
+  .btn-outline { border: 1.5px solid rgba(255,255,255,0.25); color: var(--white); padding: 0.875rem 2rem; border-radius: 8px; font-weight: 500; font-size: 0.9rem; text-decoration: none; transition: all 0.2s; display: inline-block; }
+  .btn-outline:hover { border-color: var(--frost); color: var(--frost); }
+  .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; }
+  .stat-card { background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; }
+  .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: var(--frost); letter-spacing: 0.04em; }
+  .stat-label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.25rem; }
+  .hero-visual { position: relative; }
+  .hero-card { background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 20px; padding: 2rem; aspect-ratio: 4/5; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; position: relative; }
+  .hero-card-bg { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(74,155,190,0.08) 0%, rgba(10,22,40,0.8) 100%); }
+  .product-placeholder { position: absolute; top: 0; left: 0; right: 0; height: 70%; background: linear-gradient(135deg, rgba(74,155,190,0.15), rgba(26,74,110,0.3)); display: flex; align-items: center; justify-content: center; }
+  .product-icon { width: 120px; height: 120px; border-radius: 50%; border: 3px solid rgba(74,155,190,0.4); display: flex; align-items: center; justify-content: center; }
+  .product-icon svg { width: 60px; height: 60px; color: var(--frost); }
+  .hero-card-info { position: relative; z-index: 2; }
+  .hero-card-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--white); letter-spacing: 0.06em; }
+  .hero-card-sub { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
+  .hero-badge { background: var(--frost); color: var(--white); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 4px; display: inline-block; margin-bottom: 0.75rem; }
+
+  /* TRUST BAR */
+  .trust-bar { background: rgba(255,255,255,0.03); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 1.25rem 2rem; }
+  .trust-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
+  .trust-item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.82rem; color: var(--muted); font-weight: 500; }
+  .trust-item svg { width: 18px; height: 18px; color: var(--frost); flex-shrink: 0; }
+
+  /* SECTIONS */
+  section { padding: 5rem 2rem; }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+  .section-eyebrow { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--frost); font-weight: 600; margin-bottom: 0.75rem; }
+  .section-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.2rem, 4vw, 3rem); color: var(--white); letter-spacing: 0.04em; margin-bottom: 1rem; }
+  .section-sub { color: var(--muted); font-size: 1rem; max-width: 560px; }
+
+  /* PRODUCTS */
+  .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+  .product-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: transform 0.2s, border-color 0.2s; cursor: pointer; }
+  .product-card:hover { transform: translateY(-4px); border-color: rgba(74,155,190,0.4); }
+  .product-card.featured { border-color: var(--frost); }
+  .product-img { height: 220px; background: linear-gradient(135deg, rgba(74,155,190,0.1), rgba(26,74,110,0.2)); display: flex; align-items: center; justify-content: center; position: relative; }
+  .product-badge { position: absolute; top: 1rem; left: 1rem; background: var(--frost); color: white; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.3rem 0.7rem; border-radius: 4px; }
+  .product-icon-lg { width: 80px; height: 80px; border-radius: 50%; border: 2px solid rgba(74,155,190,0.35); display: flex; align-items: center; justify-content: center; }
+  .product-body { padding: 1.5rem; }
+  .product-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: var(--white); letter-spacing: 0.06em; margin-bottom: 0.4rem; }
+  .product-desc { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+  .product-price { font-size: 1.3rem; font-weight: 600; color: var(--white); margin-bottom: 1rem; }
+  .product-price span { font-size: 0.8rem; font-weight: 400; color: var(--muted); margin-left: 0.4rem; }
+  .product-features { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.25rem; }
+  .product-features li { font-size: 0.82rem; color: var(--muted); display: flex; align-items: center; gap: 0.5rem; }
+  .product-features li::before { content: ''; width: 6px; height: 6px; background: var(--frost); border-radius: 50%; flex-shrink: 0; }
+  .btn-card { display: block; text-align: center; background: transparent; border: 1.5px solid rgba(74,155,190,0.5); color: var(--frost); padding: 0.65rem; border-radius: 8px; font-size: 0.85rem; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+  .btn-card:hover { background: var(--frost); color: white; }
+
+  /* FEATURES */
+  .features-bg { background: rgba(255,255,255,0.02); }
+  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+  .feature-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; }
+  .feature-icon { width: 48px; height: 48px; background: rgba(74,155,190,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; }
+  .feature-icon svg { width: 24px; height: 24px; color: var(--frost); }
+  .feature-title { font-weight: 600; color: var(--white); margin-bottom: 0.5rem; font-size: 0.95rem; }
+  .feature-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.65; }
+
+  /* REVIEWS PAGE */
+  .reviews-hero { padding: 8rem 2rem 4rem; background: linear-gradient(180deg, rgba(74,155,190,0.06) 0%, transparent 100%); }
+  .rating-summary { display: grid; grid-template-columns: auto 1fr; gap: 3rem; align-items: center; margin: 3rem 0; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 20px; padding: 2.5rem; }
+  .rating-big { text-align: center; }
+  .rating-num { font-family: 'Bebas Neue', sans-serif; font-size: 5rem; color: var(--white); line-height: 1; }
+  .stars { display: flex; gap: 4px; justify-content: center; margin: 0.5rem 0; }
+  .star { color: var(--gold); font-size: 1.2rem; }
+  .rating-count { font-size: 0.8rem; color: var(--muted); }
+  .rating-bars { display: flex; flex-direction: column; gap: 0.6rem; }
+  .bar-row { display: flex; align-items: center; gap: 0.75rem; font-size: 0.82rem; }
+  .bar-label { color: var(--muted); width: 32px; text-align: right; flex-shrink: 0; }
+  .bar-track { flex: 1; height: 6px; background: rgba(255,255,255,0.08); border-radius: 3px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--frost); border-radius: 3px; }
+  .bar-count { color: var(--muted); width: 30px; font-size: 0.78rem; }
+  .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .review-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 14px; padding: 1.75rem; }
+  .review-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .reviewer-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, var(--frost), var(--cold)); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; color: white; flex-shrink: 0; }
+  .reviewer-name { font-weight: 600; font-size: 0.9rem; color: var(--white); }
+  .reviewer-meta { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+  .review-stars { display: flex; gap: 3px; margin-bottom: 0.75rem; }
+  .review-title { font-weight: 600; color: var(--white); font-size: 0.9rem; margin-bottom: 0.5rem; }
+  .review-text { font-size: 0.84rem; color: var(--muted); line-height: 1.65; }
+  .review-product { font-size: 0.75rem; color: var(--frost); margin-top: 1rem; font-weight: 500; }
+  .verified { display: inline-flex; align-items: center; gap: 4px; font-size: 0.72rem; color: #4CAF50; font-weight: 500; margin-top: 0.5rem; }
+
+  /* COMPARE PAGE */
+  .compare-hero { padding: 8rem 2rem 4rem; }
+  .compare-table-wrap { overflow-x: auto; margin: 3rem 0; }
+  .compare-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+  .compare-table th { padding: 1.25rem 1.5rem; text-align: center; background: rgba(255,255,255,0.03); border: 1px solid var(--border); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+  .compare-table th.highlight { background: rgba(74,155,190,0.12); border-color: rgba(74,155,190,0.4); color: var(--frost); }
+  .compare-table td { padding: 1rem 1.5rem; border: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 0.84rem; vertical-align: middle; }
+  .compare-table td.highlight { background: rgba(74,155,190,0.05); border-color: rgba(74,155,190,0.25); color: var(--text); }
+  .compare-table td.feature-name { text-align: left; color: var(--text); font-weight: 500; background: rgba(255,255,255,0.02); }
+  .compare-table tr:hover td { background: rgba(255,255,255,0.02); }
+  .compare-table tr:hover td.highlight { background: rgba(74,155,190,0.08); }
+  .check { color: #4CAF50; font-size: 1.1rem; }
+  .cross { color: #f44336; font-size: 1.1rem; }
+  .partial { color: var(--gold); font-size: 0.8rem; }
+  .col-header { display: flex; flex-direction: column; align-items: center; gap: 0.4rem; }
+  .col-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; letter-spacing: 0.06em; }
+  .col-badge { background: var(--frost); color: white; font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+  /* FAQ */
+  .faq-list { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+  .faq-item { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .faq-q { padding: 1.25rem 1.5rem; font-weight: 500; color: var(--white); cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 0.92rem; user-select: none; }
+  .faq-q:hover { color: var(--frost); }
+  .faq-chevron { transition: transform 0.25s; color: var(--muted); flex-shrink: 0; }
+  .faq-a { padding: 0 1.5rem 1.25rem; color: var(--muted); font-size: 0.85rem; line-height: 1.7; display: none; }
+  .faq-item.open .faq-a { display: block; }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+  /* FOOTER */
+  footer { background: rgba(0,0,0,0.3); border-top: 1px solid var(--border); padding: 3rem 2rem; }
+  .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; }
+  .footer-brand p { color: var(--muted); font-size: 0.84rem; margin-top: 0.75rem; max-width: 280px; line-height: 1.65; }
+  .footer-col h4 { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 1rem; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+  .footer-col a { color: var(--muted); text-decoration: none; font-size: 0.84rem; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--white); }
+  .footer-bottom { max-width: 1200px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-bottom p { color: var(--muted); font-size: 0.78rem; }
+
+  /* BREADCRUMB */
+  .breadcrumb { font-size: 0.78rem; color: var(--muted); margin-bottom: 1.5rem; }
+  .breadcrumb a { color: var(--muted); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--frost); }
+  .breadcrumb span { margin: 0 0.4rem; }
+
+  /* PAGE HEADING SECTION */
+  .page-heading { padding: 7rem 2rem 3rem; }
+  .page-heading h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 5vw, 4rem); color: var(--white); letter-spacing: 0.04em; margin-bottom: 0.75rem; }
+  .page-heading p { color: var(--muted); font-size: 1rem; max-width: 600px; }
+
+  /* CTA BANNER */
+  .cta-banner { background: linear-gradient(135deg, rgba(74,155,190,0.15), rgba(26,74,110,0.2)); border: 1px solid rgba(74,155,190,0.25); border-radius: 20px; padding: 3.5rem; text-align: center; margin: 5rem 0 2rem; }
+  .cta-banner h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--white); letter-spacing: 0.04em; margin-bottom: 0.75rem; }
+  .cta-banner p { color: var(--muted); margin-bottom: 2rem; font-size: 0.95rem; }
+  .cta-banner-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+  @media (max-width: 768px) {
+    .hero-content { grid-template-columns: 1fr; }
+    .hero-visual { display: none; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .rating-summary { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo" onclick="showPage('home')">TITAN <span>WELLNESS</span></a>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showPage('home')" id="nav-home" class="active">Cold Plunges</a></li>
+      <li><a href="#" onclick="showPage('home')">Water Chillers</a></li>
+      <li><a href="#" onclick="showPage('reviews')" id="nav-reviews">Reviews</a></li>
+      <li><a href="#" onclick="showPage('compare')" id="nav-compare">Compare</a></li>
+    </ul>
+    <a href="#" class="nav-cta">Shop Now</a>
+  </div>
+</nav>
+
+<!-- ==================== HOME PAGE ==================== -->
+<div id="page-home" class="page active">
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-label="Titan Cold Plunge hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div>
+          <p class="hero-eyebrow">Titan Wellness — Titan Cold Plunge Systems</p>
+          <h1>COLD PLUNGE <em>BUILT DIFFERENT</em></h1>
+          <p class="hero-sub">More customization. More features. Same obsession with cold therapy performance. Titan Cold Plunge systems engineered to cool faster, hold temp longer, and fit your exact setup.</p>
+          <div class="hero-actions">
+            <a href="#products" class="btn-primary">Shop Cold Plunges</a>
+            <a href="#" onclick="showPage('compare')" class="btn-outline">Compare Models</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-num">39°F</div>
+              <div class="stat-label">Minimum temp</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">4,800+</div>
+              <div class="stat-label">Verified reviews</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">0%</div>
+              <div class="stat-label">APR financing</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">3yr</div>
+              <div class="stat-label">Warranty</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-card-bg"></div>
+            <div class="product-placeholder">
+              <div class="product-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/><path d="M12 6v6l4 2"/><path d="M8 12H4M20 12h-4M12 4V2M12 22v-2"/></svg>
+              </div>
+            </div>
+            <div class="hero-card-info">
+              <div class="hero-badge">Best Seller</div>
+              <div class="hero-card-title">ARCTIC PRO SERIES</div>
+              <div class="hero-card-sub">Full customization • Digital temp control • Wi-Fi enabled</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+          Free shipping on all orders
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          3-year warranty
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+          0% APR financing available
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          4,800+ happy customers
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          Live support 7 days/week
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+      <div class="section-inner">
+        <p class="section-eyebrow">Titan Cold Plunge Collection</p>
+        <h2 class="section-title">CHOOSE YOUR TITAN</h2>
+        <p class="section-sub">Every Titan Cold Plunge system is built for serious cold therapy with customizable settings that competitors simply don't offer.</p>
+        <div class="products-grid">
+          <article class="product-card" itemscope itemtype="https://schema.org/Product">
+            <div class="product-img">
+              <div class="product-badge">Most Popular</div>
+              <div class="product-icon-lg">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4a9bbe" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              </div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name" itemprop="name">ARCTIC SERIES 100</h3>
+              <p class="product-desc" itemprop="description">Entry-level Titan Cold Plunge tub. Cools to 39°F. Perfect for athletes and home recovery setups.</p>
+              <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <span itemprop="price">$2,499</span> <span itemprop="priceCurrency" content="USD">or from $69/mo</span>
+              </div>
+              <ul class="product-features">
+                <li>Cools to 39°F / 4°C</li>
+                <li>180-gallon capacity</li>
+                <li>Digital temperature control</li>
+                <li>Built-in filtration & UV sanitation</li>
+                <li>Insulated cover included</li>
+              </ul>
+              <a href="#" class="btn-card">View Arctic 100</a>
+            </div>
+          </article>
+          <article class="product-card featured" itemscope itemtype="https://schema.org/Product">
+            <div class="product-img">
+              <div class="product-badge">Best Value</div>
+              <div class="product-icon-lg">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4a9bbe" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name" itemprop="name">ARCTIC PRO SERIES</h3>
+              <p class="product-desc" itemprop="description">Our flagship Titan Cold Plunge. Wi-Fi enabled, app-controlled, fully customizable cooling schedules.</p>
+              <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <span itemprop="price">$3,299</span> <span itemprop="priceCurrency" content="USD">or from $91/mo</span>
+              </div>
+              <ul class="product-features">
+                <li>Cools to 37°F / 3°C</li>
+                <li>220-gallon capacity</li>
+                <li>Wi-Fi app control + scheduling</li>
+                <li>Ozone + UV dual sanitation</li>
+                <li>Custom color shells available</li>
+                <li>3-speed circulation pump</li>
+              </ul>
+              <a href="#" class="btn-card">View Arctic Pro</a>
+            </div>
+          </article>
+          <article class="product-card" itemscope itemtype="https://schema.org/Product">
+            <div class="product-img">
+              <div class="product-badge">Commercial</div>
+              <div class="product-icon-lg">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#4a9bbe" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name" itemprop="name">TITAN ELITE CHILLER</h3>
+              <p class="product-desc" itemprop="description">Heavy-duty Titan Water Chiller for commercial gyms, spas, and high-volume cold plunge setups.</p>
+              <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <span itemprop="price">$4,899</span> <span itemprop="priceCurrency" content="USD">or from $136/mo</span>
+              </div>
+              <ul class="product-features">
+                <li>Commercial-grade compressor</li>
+                <li>Rapid chill: 50°F drop in 45 min</li>
+                <li>Remote monitoring dashboard</li>
+                <li>Custom size configurations</li>
+                <li>Priority support + on-site warranty</li>
+              </ul>
+              <a href="#" class="btn-card">View Elite Chiller</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features-bg">
+      <div class="section-inner">
+        <p class="section-eyebrow">Why Titan Cold Plunge</p>
+        <h2 class="section-title">MORE FEATURES. MORE CONTROL.</h2>
+        <p class="section-sub">Titan Wellness packs more customization into every cold plunge than any competitor — at no extra cost.</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div>
+            <div class="feature-title">Wi-Fi App Control</div>
+            <div class="feature-desc">Set schedules, monitor temperature, and adjust settings remotely from your phone. Titan Cold Plunge is the only system in its price range with full app control.</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg></div>
+            <div class="feature-title">Custom Color Shells</div>
+            <div class="feature-desc">Choose your shell color, interior finish, and panel design. Your Titan Cold Plunge tub should match your space — not the other way around.</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+            <div class="feature-title">Dual Sanitation System</div>
+            <div class="feature-desc">UV + ozone sanitation keeps your Titan ice bath crystal clear without harsh chemicals. Change water less often and spend more time recovering.</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+            <div class="feature-title">Rapid Cool Technology</div>
+            <div class="feature-desc">Titan Water Chillers reach target temperature up to 40% faster than competing systems. Less waiting, more plunging.</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg></div>
+            <div class="feature-title">0% APR Financing</div>
+            <div class="feature-desc">Own your Titan Cold Plunge for as little as $69/month with zero interest. Approval in minutes, no hidden fees.</div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg></div>
+            <div class="feature-title">3-Year Full Warranty</div>
+            <div class="feature-desc">Every Titan Cold Plunge comes with a 3-year comprehensive warranty — parts, compressor, and labor. The most complete coverage in the industry.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (SEO) -->
+    <section>
+      <div class="section-inner">
+        <p class="section-eyebrow">Titan Cold Plunge FAQ</p>
+        <h2 class="section-title">FREQUENTLY ASKED</h2>
+        <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="toggleFaq(this)" itemprop="name">How cold does a Titan Cold Plunge get?
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+            </div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">The Titan Cold Plunge Arctic Series 100 cools to 39°F (4°C), while the Arctic Pro Series reaches 37°F (3°C). Our Elite Chiller can drop water temperature to as low as 35°F for commercial applications. All models allow you to set any target temperature via the digital control panel or the Titan Wellness app.</div></div>
+          </div>
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="toggleFaq(this)" itemprop="name">What makes Titan Cold Plunge different from competitors?
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+            </div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Titan Cold Plunge systems offer significantly more customization than competing brands at the same price point. This includes Wi-Fi app control with scheduling, dual UV + ozone sanitation, custom shell colors, and a 3-year comprehensive warranty that covers parts, compressor, and labor. Most competitors offer only basic digital controls with no app integration and shorter warranties.</div></div>
+          </div>
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="toggleFaq(this)" itemprop="name">Does Titan Wellness offer financing on cold plunges?
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+            </div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Yes — Titan Wellness offers 0% APR financing on all Titan Cold Plunge systems. The Arctic Series 100 starts at $69/month, the Arctic Pro at $91/month, and the Elite Chiller at $136/month. Approval takes just minutes and there are no hidden fees or prepayment penalties.</div></div>
+          </div>
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="toggleFaq(this)" itemprop="name">How do I maintain a Titan Cold Plunge ice bath?
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+            </div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">Titan Cold Plunge systems are designed for low maintenance. The built-in UV and ozone dual sanitation (Pro Series and above) keeps water clean for 4–6 weeks before needing a water change. For all models, we recommend a quick filter rinse monthly and a water change every 4–8 weeks depending on usage. The Titan app sends maintenance reminders automatically.</div></div>
+          </div>
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <div class="faq-q" onclick="toggleFaq(this)" itemprop="name">Can a Titan Water Chiller be used outdoors?
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+            </div>
+            <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text">All Titan Cold Plunge tubs and Titan Water Chillers are rated for indoor and outdoor use. The chillers carry an IP55 weather-resistance rating, suitable for covered patios and open-air installations. For climates with freezing winters, we recommend the insulated housing upgrade or moving the chiller unit indoors during extreme cold snaps.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <div class="cta-banner">
+          <h2>READY TO TAKE THE PLUNGE?</h2>
+          <p>Join 4,800+ Titan Wellness customers who've made cold therapy part of their daily routine.</p>
+          <div class="cta-banner-actions">
+            <a href="#products" class="btn-primary">Shop Titan Cold Plunge</a>
+            <a href="#" onclick="showPage('compare')" class="btn-outline">Compare All Models</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- ==================== REVIEWS PAGE ==================== -->
+<div id="page-reviews" class="page">
+  <main>
+    <div class="page-heading">
+      <div class="section-inner">
+        <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a><span>/</span> Customer Reviews</div>
+        <h1>TITAN COLD PLUNGE REVIEWS</h1>
+        <p>Real reviews from real Titan Wellness customers. Over 4,800 verified purchases and counting.</p>
+      </div>
+    </div>
+
+    <section style="padding-top: 0;">
+      <div class="section-inner">
+        <div class="rating-summary" itemscope itemtype="https://schema.org/AggregateRating">
+          <div class="rating-big">
+            <div class="rating-num" itemprop="ratingValue">4.8</div>
+            <div class="stars">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <div class="rating-count"><span itemprop="reviewCount">4,847</span> verified reviews</div>
+          </div>
+          <div class="rating-bars">
+            <div class="bar-row"><span class="bar-label">5★</span><div class="bar-track"><div class="bar-fill" style="width:78%"></div></div><span class="bar-count">3,781</span></div>
+            <div class="bar-row"><span class="bar-label">4★</span><div class="bar-track"><div class="bar-fill" style="width:14%"></div></div><span class="bar-count">679</span></div>
+            <div class="bar-row"><span class="bar-label">3★</span><div class="bar-track"><div class="bar-fill" style="width:5%"></div></div><span class="bar-count">242</span></div>
+            <div class="bar-row"><span class="bar-label">2★</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span class="bar-count">97</span></div>
+            <div class="bar-row"><span class="bar-label">1★</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div><span class="bar-count">48</span></div>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <article class="review-card" itemscope itemtype="https://schema.org/Review">
+            <div class="review-header">
+              <div class="reviewer-avatar">MR</div>
+              <div>
+                <div class="reviewer-name" itemprop="author">Marcus R.</div>
+                <div class="reviewer-meta">Marathon runner · Verified purchase</div>
+              </div>
+            </div>
+            <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <div class="review-title" itemprop="name">Game changer for post-run recovery</div>
+            <p class="review-text" itemprop="reviewBody">I love it. Post long-run muscle soreness and tightness has dropped dramatically since I started using the Titan Cold Plunge daily. The app control means I can set it to my target temp before I even get home. Setup was straightforward and the quality feels premium throughout.</p>
+            <div class="review-product">Titan Arctic Pro Series</div>
+            <div class="verified">✓ Verified Buyer</div>
+          </article>
+          <!-- Review 2 -->
+          <article class="review-card" itemscope itemtype="https://schema.org/Review">
+            <div class="review-header">
+              <div class="reviewer-avatar" style="background: linear-gradient(135deg, #4a9bbe, #1a4a6e);">SL</div>
+              <div>
+                <div class="reviewer-name" itemprop="author">Sarah L.</div>
+                <div class="reviewer-meta">CrossFit coach · Verified purchase</div>
+              </div>
+            </div>
+            <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <div class="review-title" itemprop="name">Best cold plunge I've owned — and I've tried 3 others</div>
+            <p class="review-text" itemprop="reviewBody">Compared to two other brands I've used, the Titan Cold Plunge is in another league. The dual sanitation system actually keeps the water clean — I'm not dumping and refilling every week. And the custom shell I got looks amazing in my gym. Worth every penny.</p>
+            <div class="review-product">Titan Arctic Pro Series — Custom Shell</div>
+            <div class="verified">✓ Verified Buyer</div>
+          </article>
+          <!-- Review 3 -->
+          <article class="review-card" itemscope itemtype="https://schema.org/Review">
+            <div class="review-header">
+              <div class="reviewer-avatar" style="background: linear-gradient(135deg, #2a7a5e, #1a4a6e);">DJ</div>
+              <div>
+                <div class="reviewer-name" itemprop="author">Derek J.</div>
+                <div class="reviewer-meta">Gym owner · Verified purchase</div>
+              </div>
+            </div>
+            <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <div class="review-title" itemprop="name">Elite Chiller handles 12+ users a day without breaking a sweat</div>
+            <p class="review-text" itemprop="reviewBody">Running a recovery gym, I needed something commercial-grade. The Titan Elite Chiller has been running for 8 months straight with zero issues. The remote dashboard is perfect for managing maintenance across our two locations. Customer service has been excellent.</p>
+            <div class="review-product">Titan Elite Chiller — Commercial</div>
+            <div class="verified">✓ Verified Buyer</div>
+          </article>
+          <!-- Review 4 -->
+          <article class="review-card" itemscope itemtype="https://schema.org/Review">
+            <div class="review-header">
+              <div class="reviewer-avatar" style="background: linear-gradient(135deg, #7a4a9e, #4a2e6e);">KP</div>
+              <div>
+                <div class="reviewer-name" itemprop="author">Kelly P.</div>
+                <div class="reviewer-meta">Biohacker · Verified purchase</div>
+              </div>
+            </div>
+            <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <div class="review-title" itemprop="name">The scheduling feature alone is worth it</div>
+            <p class="review-text" itemprop="reviewBody">I set my Titan Cold Plunge to cool down every morning at 5:30am so it's ready when I wake up. That's something I couldn't do with my old ice bath setup. Titan Wellness has clearly built this for people who take cold therapy seriously. The water temperature is incredibly consistent.</p>
+            <div class="review-product">Titan Arctic Pro Series</div>
+            <div class="verified">✓ Verified Buyer</div>
+          </article>
+          <!-- Review 5 -->
+          <article class="review-card" itemscope itemtype="https://schema.org/Review">
+            <div class="review-header">
+              <div class="reviewer-avatar" style="background: linear-gradient(135deg, #be4a4a, #6e1a1a);">TW</div>
+              <div>
+                <div class="reviewer-name" itemprop="author">Tom W.</div>
+                <div class="reviewer-meta">NFL strength coach · Verified purchase</div>
+              </div>
+            </div>
+            <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <div class="review-title" itemprop="name">Players love it. Management loves the price.</div>
+            <p class="review-text" itemprop="reviewBody">Brought in two Titan Cold Plunge units for our facility after comparing every major brand. The feature-to-price ratio is unbeatable. Fast cool time, easy controls, and the 3-year warranty gave our facility manager peace of mind. Already recommending to colleagues.</p>
+            <div class="review-product">Titan Arctic 100 × 2</div>
+            <div class="verified">✓ Verified Buyer</div>
+          </article>
+          <!-- Review 6 -->
+          <article class="review-card" itemscope itemtype="https://schema.org/Review">
+            <div class="review-header">
+              <div class="reviewer-avatar" style="background: linear-gradient(135deg, #4abe9e, #1a6e4e);">AN</div>
+              <div>
+                <div class="reviewer-name" itemprop="author">Aisha N.</div>
+                <div class="reviewer-meta">Physical therapist · Verified purchase</div>
+              </div>
+            </div>
+            <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <div class="review-title" itemprop="name">Recommending to all my patients now</div>
+            <p class="review-text" itemprop="reviewBody">As a PT, I needed a cold plunge that I could set to precise therapeutic temperatures for different protocols. The Titan Cold Plunge holds temp within half a degree, which matters clinically. The water stays clean with minimal effort and the tub itself is easy to clean and sanitize between patients.</p>
+            <div class="review-product">Titan Arctic Pro Series</div>
+            <div class="verified">✓ Verified Buyer</div>
+          </article>
+        </div>
+
+        <div class="cta-banner" style="margin-top: 4rem;">
+          <h2>JOIN 4,800+ TITAN WELLNESS CUSTOMERS</h2>
+          <p>Experience the Titan Cold Plunge difference for yourself. Free shipping + 0% APR financing.</p>
+          <div class="cta-banner-actions">
+            <a href="#" onclick="showPage('home')" class="btn-primary">Shop Cold Plunges</a>
+            <a href="#" onclick="showPage('compare')" class="btn-outline">Compare Models</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- ==================== COMPARE PAGE ==================== -->
+<div id="page-compare" class="page">
+  <main>
+    <div class="page-heading">
+      <div class="section-inner">
+        <div class="breadcrumb"><a href="#" onclick="showPage('home')">Home</a><span>/</span> Compare Cold Plunges</div>
+        <h1>TITAN COLD PLUNGE VS COMPETITION</h1>
+        <p>See how Titan Wellness stacks up against other cold plunge brands on the features that matter most.</p>
+      </div>
+    </div>
+
+    <section style="padding-top: 0;">
+      <div class="section-inner">
+        <div class="compare-table-wrap">
+          <table class="compare-table" role="table" aria-label="Cold plunge brand comparison">
+            <thead>
+              <tr>
+                <th style="text-align:left; width: 240px;">Feature</th>
+                <th class="highlight">
+                  <div class="col-header">
+                    <span class="col-logo" style="color: var(--frost);">TITAN WELLNESS</span>
+                    <span class="col-badge">Most Features</span>
+                  </div>
+                </th>
+                <th>
+                  <div class="col-header"><span class="col-logo">Plunge</span></div>
+                </th>
+                <th>
+                  <div class="col-header"><span class="col-logo">Ice Barrel</span></div>
+                </th>
+                <th>
+                  <div class="col-header"><span class="col-logo">Blue Cube</span></div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="feature-name">Starting price</td><td class="highlight">$2,499</td><td>$4,990</td><td>$1,199</td><td>$5,990</td></tr>
+              <tr><td class="feature-name">Minimum temperature</td><td class="highlight">37°F / 3°C</td><td>39°F / 4°C</td><td>Ice-dependent</td><td>40°F / 4°C</td></tr>
+              <tr><td class="feature-name">Wi-Fi / App control</td><td class="highlight"><span class="check">✓</span> Full app + scheduling</td><td><span class="partial">Limited</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td class="feature-name">Dual sanitation (UV + Ozone)</td><td class="highlight"><span class="check">✓</span> Pro &amp; Elite</td><td><span class="partial">UV only</span></td><td><span class="cross">✗</span></td><td><span class="partial">UV only</span></td></tr>
+              <tr><td class="feature-name">Custom color shells</td><td class="highlight"><span class="check">✓</span> Multiple options</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td></tr>
+              <tr><td class="feature-name">Temperature scheduling</td><td class="highlight"><span class="check">✓</span> Daily schedules</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="partial">Basic timer</span></td></tr>
+              <tr><td class="feature-name">Warranty</td><td class="highlight">3 years (full)</td><td>2 years (limited)</td><td>1 year</td><td>2 years (limited)</td></tr>
+              <tr><td class="feature-name">0% APR financing</td><td class="highlight"><span class="check">✓</span> Available</td><td><span class="check">✓</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td class="feature-name">Filtration system</td><td class="highlight">Built-in, multi-stage</td><td>Built-in</td><td>None</td><td>Built-in</td></tr>
+              <tr><td class="feature-name">Commercial model available</td><td class="highlight"><span class="check">✓</span> Elite Chiller</td><td><span class="cross">✗</span></td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+              <tr><td class="feature-name">Rapid chill speed</td><td class="highlight"><span class="check">✓</span> 40% faster</td><td>Standard</td><td>N/A</td><td>Standard</td></tr>
+              <tr><td class="feature-name">Free shipping</td><td class="highlight"><span class="check">✓</span> All orders</td><td><span class="check">✓</span></td><td><span class="partial">Over $500</span></td><td><span class="partial">Varies</span></td></tr>
+              <tr><td class="feature-name">Customer support</td><td class="highlight">7 days/week, live</td><td>Weekdays</td><td>Email only</td><td>Weekdays</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="font-size: 0.78rem; color: var(--muted); margin-top: 1rem;">Competitor data based on publicly available specifications as of 2024. Titan Wellness makes no guarantees about competitor pricing or features, which may change. Always verify with the respective brand.</p>
+
+        <!-- Feature deep dive -->
+        <div style="margin-top: 4rem;">
+          <p class="section-eyebrow">Deep Dive</p>
+          <h2 class="section-title">WHY TITAN WINS ON FEATURES</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div>
+              <div class="feature-title">The only cold plunge with scheduling</div>
+              <div class="feature-desc">No competitor at this price point lets you pre-schedule when your tub cools down. With Titan, your cold plunge is ready when you wake up — every morning.</div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg></div>
+              <div class="feature-title">Custom shells — unique in the industry</div>
+              <div class="feature-desc">Titan Wellness is the only cold plunge brand offering custom exterior color and finish options at no additional charge on the Pro Series and above.</div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+              <div class="feature-title">3-year warranty — best in class</div>
+              <div class="feature-desc">Titan offers the most comprehensive warranty in the cold plunge industry: 3 full years covering parts, compressor, and labor. Plunge with confidence.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-banner" style="margin-top: 4rem;">
+          <h2>THE CHOICE IS CLEAR</h2>
+          <p>More features. More customization. Better warranty. Same commitment to cold therapy performance.</p>
+          <div class="cta-banner-actions">
+            <a href="#" onclick="showPage('home')" class="btn-primary">Shop Titan Cold Plunge</a>
+            <a href="#" onclick="showPage('reviews')" class="btn-outline">Read Customer Reviews</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- FOOTER (shared) -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo" onclick="showPage('home')">TITAN <span>WELLNESS</span></a>
+      <p>Titan Cold Plunge systems, ice baths, and water chillers engineered for performance, recovery, and durability. Built for athletes, coaches, and anyone serious about cold therapy.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Cold Plunges</h4>
+      <ul>
+        <li><a href="#">Arctic Series 100</a></li>
+        <li><a href="#">Arctic Pro Series</a></li>
+        <li><a href="#">Elite Chiller</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#" onclick="showPage('reviews')">Reviews</a></li>
+        <li><a href="#" onclick="showPage('compare')">Compare</a></li>
+        <li><a href="#">About Titan Wellness</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Warranty</a></li>
+        <li><a href="#">Financing</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Titan Wellness. All rights reserved. Titan Cold Plunge® is a registered trademark.</p>
+    <p style="color: var(--muted); font-size: 0.78rem;">Privacy Policy · Terms of Service · Sitemap</p>
+  </div>
+</footer>
+
+<script>
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  const navEl = document.getElementById('nav-' + name);
+  if (navEl) navEl.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  return false;
+}
+
+function toggleFaq(el) {
+  el.parentElement.classList.toggle('open');
+}
+</script>
+</body>
+</html>
