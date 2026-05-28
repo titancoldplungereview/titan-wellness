@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Titan Cold Plunge | Titan Wellness</title>
+  <meta name="description" content="Cold therapy guides, recovery tips, and honest reviews from real Titan Cold Plunge users. Explore the Titan Wellness blog." />
+  <meta name="keywords" content="titan cold plunge, titan wellness, cold plunge, ice bath, water chiller, cold therapy, sauna, recovery" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --dark: #111111;
+      --card: #161616;
+      --border: #242424;
+      --ice: #a8d8ea;
+      --ice-dim: rgba(168,216,234,0.12);
+      --white: #f5f5f5;
+      --muted: #888;
+      --accent: #4fc3f7;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.12em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--ice); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--muted); text-decoration: none;
+      font-size: 0.85rem; font-weight: 500;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); }
+    .nav-cta {
+      background: var(--ice); color: var(--black);
+      padding: 0.5rem 1.2rem; border-radius: 4px;
+      font-size: 0.8rem; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      text-decoration: none; transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.85; }
+
+    /* HERO */
+    .blog-hero {
+      padding: 80px 5% 60px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(168,216,234,0.04) 0%, transparent 100%);
+    }
+    .blog-hero-label {
+      font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--ice); margin-bottom: 1rem;
+    }
+    .blog-hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      line-height: 0.95; letter-spacing: 0.04em;
+      margin-bottom: 1.2rem;
+    }
+    .blog-hero p {
+      color: var(--muted); font-size: 1.05rem;
+      max-width: 520px; line-height: 1.7;
+    }
+
+    /* GRID */
+    .blog-grid {
+      padding: 60px 5% 100px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2px;
+    }
+
+    .post-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 2.5rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex; flex-direction: column;
+      transition: background 0.2s, border-color 0.2s;
+      position: relative; overflow: hidden;
+    }
+    .post-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--ice), transparent);
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .post-card:hover { background: #1a1a1a; border-color: #333; }
+    .post-card:hover::before { opacity: 1; }
+
+    .post-tag {
+      display: inline-block;
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--ice); margin-bottom: 1.2rem;
+    }
+    .post-card h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem; letter-spacing: 0.04em;
+      line-height: 1.1; margin-bottom: 1rem;
+      color: var(--white);
+    }
+    .post-card p {
+      color: var(--muted); font-size: 0.9rem;
+      line-height: 1.7; flex: 1; margin-bottom: 2rem;
+    }
+    .post-meta {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+      padding-top: 1.2rem; margin-top: auto;
+    }
+    .post-read-time {
+      font-size: 0.75rem; color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+    .post-arrow {
+      font-size: 0.8rem; color: var(--ice);
+      letter-spacing: 0.08em; font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    /* FEATURED (first card) */
+    .post-card.featured {
+      grid-column: 1 / -1;
+      flex-direction: row; gap: 3rem;
+      align-items: flex-start;
+      padding: 3rem;
+    }
+    .featured-badge {
+      display: inline-block;
+      background: var(--ice-dim); color: var(--ice);
+      font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 0.25rem 0.6rem; border-radius: 2px;
+      margin-bottom: 0.8rem;
+    }
+    .featured-content { flex: 1; }
+    .featured-number {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(5rem, 12vw, 9rem);
+      color: rgba(168,216,234,0.06);
+      line-height: 1; letter-spacing: -0.02em;
+      flex-shrink: 0;
+    }
+    .post-card.featured h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      border-top: 1px solid var(--border);
+      padding: 3rem 5%;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem; letter-spacing: 0.1em;
+      color: var(--white); text-decoration: none;
+    }
+    .footer-logo span { color: var(--ice); }
+    footer p { color: var(--muted); font-size: 0.8rem; }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .post-card.featured { flex-direction: column; }
+      .featured-number { display: none; }
+      .blog-grid { grid-template-columns: 1fr; gap: 1px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">TITAN <span>WELLNESS</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#products">Cold Plunges</a></li>
+      <li><a href="index.html#products">Water Chillers</a></li>
+      <li><a href="index.html#reviews">Reviews</a></li>
+      <li><a href="index.html#compare">Compare</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+    </ul>
+    <a class="nav-cta" href="index.html#products">Shop Now</a>
+  </nav>
+
+  <section class="blog-hero">
+    <p class="blog-hero-label">Titan Wellness Journal</p>
+    <h1>COLD THERAPY<br>INSIGHTS</h1>
+    <p>Real experience with cold plunge systems, recovery protocols, and what daily ice bath practice actually looks like over time.</p>
+  </section>
+
+  <section class="blog-grid">
+
+    <!-- FEATURED POST -->
+    <a class="post-card featured" href="blog/cold-plunge-maintenance.html">
+      <div class="featured-number">01</div>
+      <div class="featured-content">
+        <span class="featured-badge">Featured</span>
+        <span class="post-tag">Maintenance &amp; Filtration</span>
+        <h2>The Unspoken Reality of Cold Plunge Maintenance: Why Filtration Matters</h2>
+        <p>Everyone talks about temperature and mental hurdles. Almost nobody talks about what happens to standing water over time without the right filtration system — until it forces them to quit.</p>
+        <div class="post-meta">
+          <span class="post-read-time">8 min read</span>
+          <span class="post-arrow">Read Article →</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- POST 2 -->
+    <a class="post-card" href="blog/daily-cold-plunge-routine.html">
+      <span class="post-tag">Daily Recovery</span>
+      <h2>Using a Titan Cold Plunge Every Day</h2>
+      <p>What a sustainable daily cold therapy routine actually looks like — from morning protocols and chiller performance to long-term maintenance habits that keep the practice alive.</p>
+      <div class="post-meta">
+        <span class="post-read-time">7 min read</span>
+        <span class="post-arrow">Read Article →</span>
+      </div>
+    </a>
+
+    <!-- POST 3 -->
+    <a class="post-card" href="blog/titan-cold-plunge-review.html">
+      <span class="post-tag">Long Term Review</span>
+      <h2>Titan Cold Plunge: Honest Review After Months of Daily Use</h2>
+      <p>After extended daily use, here is what actually holds up — temperature consistency, water quality, chiller performance, and whether the recovery benefits remain real over time.</p>
+      <div class="post-meta">
+        <span class="post-read-time">9 min read</span>
+        <span class="post-arrow">Read Article →</span>
+      </div>
+    </a>
+
+  </section>
+
+  <footer>
+    <a class="footer-logo" href="index.html">TITAN <span>WELLNESS</span></a>
+    <p>© 2026 Titan Wellness. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
